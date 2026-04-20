@@ -83,8 +83,8 @@ jobs:
 
       # Step 4: Build the Docker image and tag it with the repository name and 'latest'
       - name: Build Docker image
-        run: docker build -t ghcr.io/iacobdelia:latest .
+        run: docker build -t ghcr.io/iacobdelia/ci_cd_lab:latest .
 
       # Step 5: Push the Docker image to GitHub Container Registry
       - name: Push Docker image
-        run: docker push ghcr.io/iacobdelia:latest
+        run: docker push ghcr.io/iacobdelia/ci_cd_lab:latest
